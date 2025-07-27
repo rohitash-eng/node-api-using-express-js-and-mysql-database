@@ -1,8 +1,9 @@
 # Project Name:- node-api-using-express-js-and-mysql-database
 ### Explain:- This project demonstrates a simple backend server built with **Node.js**, **Express**, and **MySQL 8.0+**. It includes:
 
-- MySQL database connection using `MySQL 8.0`
-- RESTful API endpoint for user signup
+- express 5.1.0
+- MySQL database connection using `mysql2:3.14.2`
+- RESTful API endpoint for user sign-up
 
 ---
 
@@ -21,7 +22,17 @@
 git clone https://github.com/rohitash-eng/node-api-using-express-js-and-mysql-database.git
 cd node-api-using-express-js-and-mysql-database
 then run npm install
+then edit the database name and password in your `DataBaseConfig.js` file
 then node server.js
-open postname or bruno and test the endspoints using postman or any other API testing tool
+open Postman or bruno and test the endpoints using postman or any other API testing tool
 EX- http://localhost:3000/signup
+use json like 
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "dob": "1990-01-01",
+  "phone": "9876543210",
+  "email": "john.doe@example.com",
+  "password": "secure123"
+}
 ```
